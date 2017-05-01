@@ -1,0 +1,25 @@
+{
+    "name": "fabcss.reset",
+    "version": "1.1.0",
+    "description": "Fabricator code styling",
+    "homepage": "https://github.com/BuzzingPixelFabricator/FABCSS.reset",
+    "bugs": "https://github.com/BuzzingPixelFabricator/FABCSS.reset/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BuzzingPixelFabricator/FABCSS.reset.git"
+    },
+    "license": "Apache-2.0",
+    "author": "BuzzingPixel, LLC",
+    "contributors": [
+        {
+            "name": "TJ Draper",
+            "url": "https://buzzingpixel.com"
+        }
+    ],
+    "fabricatorCssBuild": {
+        "type": "reset",
+        "files": [
+            "src/FABCSS.reset.less"
+        ]
+    }
+}
