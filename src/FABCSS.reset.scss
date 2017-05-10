@@ -1,0 +1,136 @@
+/*----------------------------------------------------------------------------*\
+    # Copyright 2017, BuzzingPixel, LLC
+
+    # This program is free software: you can redistribute it and/or modify
+    # it under the terms of the Apache License 2.0.
+    # http://www.apache.org/licenses/LICENSE-2.0
+\*----------------------------------------------------------------------------*/
+
+/**
+ * Variables for this file
+ */
+$bodyBackground: #fff !default;
+$baseColor: lighten(#000, 25%) !default;
+$baseFont: Arial, Helvetica, sans-serif !default;
+$baseFontSize: 16px !default;
+$baseFontWeight: normal !default;
+$baseLineHeight: 1em !default;
+
+/**
+ * Everything should be border-box box-sizing and have no margin or padding
+ */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Make sure browsers leave our text size alone,
+ * we're professionals and we'll set the appropriate text size always
+ */
+html {
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * body background
+ * base typography
+ * relatively positioned
+ * text sharpening for webkit
+ */
+body {
+    background: $bodyBackground;
+    color: $baseColor;
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    font-weight: $baseFontWeight;
+    line-height: $baseLineHeight;
+    position: relative;
+
+    // Text sharpen
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+/**
+ * Main elements do not behave like divs (display: block) in IE
+ */
+main {
+    display: block;
+}
+
+/**
+ * Make sure embed, img, object, and video are responsive
+ */
+embed,
+img,
+object,
+video {
+    max-width: 100%;
+}
+embed,
+object {
+    height: 100%;
+}
+
+/**
+ * Audio, canvas, img, and video should display as inline-block
+ */
+audio,
+canvas,
+img,
+video {
+    display: inline-block;
+}
+
+/**
+ * Make sure b and strong are indeed, bold
+ */
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Reset iframes
+ */
+iframe {
+    border: 0;
+    margin-bottom: 0;
+}
+
+/**
+ * Reset sub and sup
+ */
+sub,
+sup {
+    font-size: 0.7em;
+    line-height: 0;
+    margin-left: 0.2;
+    vertical-align: baseline;
+    position: relative;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -1em;
+}
+
+/**
+ * Fieldsets
+ */
+fieldset {
+    border: 0;
+    display: block;
+    margin: 0;
+    max-width: 0;
+    min-width: 100%;
+    padding: 0;
+}

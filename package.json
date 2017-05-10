@@ -1,6 +1,6 @@
 {
     "name": "fabcss.reset",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Fabricator code styling",
     "homepage": "https://github.com/BuzzingPixelFabricator/FABCSS.reset",
     "bugs": "https://github.com/BuzzingPixelFabricator/FABCSS.reset/issues",
@@ -20,6 +20,12 @@
         "type": "reset",
         "files": [
             "src/FABCSS.reset.less"
+        ]
+    },
+    "fabricatorScssBuild": {
+        "type": "reset",
+        "files": [
+            "src/FABCSS.reset.scss"
         ]
     }
 }
