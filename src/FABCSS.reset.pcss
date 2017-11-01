@@ -7,14 +7,16 @@
 \*----------------------------------------------------------------------------*/
 
 /**
- * Variables for this file
+ * Variables
  */
-@bodyBackground: #fff;
-@baseColor: lighten(#000, 25%);
-@baseFont: Arial, Helvetica, sans-serif;
-@baseFontSize: 16px;
-@baseFontWeight: normal;
-@baseLineHeight: 1em;
+:root {
+    --bodyBackground: #fff;
+    --baseColor: #a6a6a6;
+    --baseFont: Arial, Helvetica, sans-serif;
+    --baseFontSize: 16px;
+    --baseFontWeight: normal;
+    --baseLineHeight: 1em;
+}
 
 /**
  * Everything should be border-box box-sizing and have no margin or padding
@@ -32,9 +34,7 @@
  * we're professionals and we'll set the appropriate text size always
  */
 html {
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 /**
@@ -44,15 +44,15 @@ html {
  * text sharpening for webkit
  */
 body {
-    background: @bodyBackground;
-    color: @baseColor;
-    font-family: @baseFont;
-    font-size: @baseFontSize;
-    font-weight: @baseFontWeight;
-    line-height: @baseLineHeight;
+    background: var(--bodyBackground);
+    color: var(--baseColor);
+    font-family: var(--baseFont);
+    font-size: var(--baseFontSize);
+    font-weight: var(--baseFontWeight);
+    line-height: var(--baseLineHeight);
     position: relative;
 
-    // Text sharpen
+    /* Text sharpen */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
